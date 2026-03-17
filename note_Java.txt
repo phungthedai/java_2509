@@ -1,0 +1,2 @@
+- by code sẽ đc jvm chạy biên dịch chuyển file java thành class 1 lần chạy được nhiều nền tảng coed trên file java
+
