@@ -5,6 +5,7 @@ public class Account {
     String email;
     String userName;
     String fullName;
+    Group groupId;
     Department departmentId;
     Position positionId;
     String createDate;

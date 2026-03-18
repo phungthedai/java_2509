@@ -1,5 +1,7 @@
 package org.example.day_1_java_core;
 
+import java.util.Random;
+
 public class Program {
     public static void main() {
         // tạo tạo department
@@ -169,8 +171,280 @@ public class Program {
         examQuestion3.questionId = q3;
 
 
-        System.out.println("name department" + depSale.departmentName);
-        System.out.println("name position" + posDev.positionName);
-        System.out.println("name account" + daiPhung.fullName);
+        // Question 1:
+        //Kiểm tra account thứ 2
+        //Nếu không có phòng ban (tức là department == null) thì sẽ in ra text "Nhân viên này chưa có phòng ban"
+        //Nếu không thì sẽ in ra text "Phòng ban của nhân viên này là …"
+        Account[] arrAccount = new Account[] {daiPhung, thiB, vanA};
+        if (arrAccount[2].departmentId == null) {
+            System.out.println("Nhân viên này chưa có phòng ban");
+        } else {
+            System.out.println("Phòng ban của nhân viên này là: " + arrAccount[2].departmentId.departmentName);
+        }
+
+        //        Question 2:
+        //        Kiểm tra account thứ 2
+        //        Nếu không có group thì sẽ in ra text "Nhân viên này chưa có group"
+        //        Nếu có mặt trong 1 hoặc 2 group thì sẽ in ra text "Group của nhân viên này là Java Fresher, C# Fresher"
+        //        Nếu có mặt trong 3 Group thì sẽ in ra text "Nhân viên này là người quan trọng, tham gia nhiều group"
+        //        Nếu có mặt trong 4 group trở lên thì sẽ in ra text "Nhân viên này là người hóng chuyện, tham gia tất cả các group"
+        GroupAccount[] arrGroupAcc = new GroupAccount[] {groupAccountPm, groupAccountDev, groupAccountSale};
+        int countGroup = 0;
+        for (GroupAccount groupAccount : arrGroupAcc) {
+            for (Account account: groupAccount.accountId) {
+                if (account.accountID == arrAccount[2].accountID) {
+                    countGroup += 1;
+                }
+            }
+        }
+        if (countGroup == 0) {
+            System.out.println("Nhân viên này chưa có group");
+        } else if (countGroup == 1 || countGroup == 2) {
+            System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+        } else if (countGroup == 3){
+            System.out.println("Nhân viên này là người quan trọng, tham gia nhiều group");
+        } else {
+            System.out.println("Nhân viên này là người hóng chuyện, tham gia tất cả các group");
+        }
+
+        //    Question 3:
+        //    Sử dụng toán tử ternary để làm Question 1
+        String textDepartment = "";
+        textDepartment = arrAccount[2].departmentId == null ? "Nhân viên này chưa có phòng ba" : "Phòng ban của nhân viên này là …";
+        System.out.println(textDepartment);
+//
+//        Question 4:
+//        Sử dụng toán tử ternary để làm yêu cầu sau:
+//        Kiểm tra Position của account thứ 1
+//        Nếu Position = Dev thì in ra text "Đây là Developer"
+//        Nếu không phải thì in ra text "Người này không phải là Developer"
+        String textPosition = "";
+        textPosition = arrAccount[1].positionId.positionName == NamePosition.DEV ? "Đây là Developer" : "Người này không phải là Developer";
+        System.out.println(textPosition);
+
+
+//    Question 5:
+//    Lấy ra số lượng account trong nhóm thứ 1 và in ra theo format sau:
+//    Nếu số lượng account = 1 thì in ra "Nhóm có một thành viên"
+//    Nếu số lượng account = 2 thì in ra "Nhóm có hai thành viên"
+//    Nếu số lượng account = 3 thì in ra "Nhóm có ba thành viên"
+//    Còn lại in ra "Nhóm có nhiều thành viên"
+        int countAccount = 0;
+        for (int i = 0; i < arrGroupAcc.length; i++) {
+            if (arrGroupAcc[i].groupId.groupId == 1) {
+                countAccount = arrGroupAcc[i].accountId.length;
+                break;
+            }
+        }
+        switch (countAccount) {
+            case 1:
+                System.out.println("Nhóm có một thành viên");
+                break;
+            case 2:
+                System.out.println("Nhóm có hai thành viên");
+                break;
+            case 3:
+                System.out.println("Nhóm có ba thành viên");
+                break;
+            default:
+                System.out.println("Nhóm có nhiều thành viên");
+                break;
+        }
+
+
+//        Question 6:
+//        Sử dụng switch case để làm lại Question 2
+        switch (countGroup) {
+            case 1, 2:
+                System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
+                break;
+            case 3:
+                System.out.println("Nhân viên này là người quan trọng, tham gia nhiều group");
+                break;
+            default:
+                System.out.println("Nhân viên này chưa có group");
+                break;
+        }
+
+//        Question 7:
+//        Sử dụng switch case để làm lại Question 4
+        switch (arrAccount[1].positionId.positionName) {
+            case NamePosition.DEV:
+                System.out.println("Đây là Developer");
+                break;
+            default:
+                System.out.println("Người này không phải là Developer");
+                break;
+        }
+
+
+        //        Question 8:
+        //        In ra thông tin các account bao gồm: Email, FullName và tên phòng ban của họ
+        for (Account account: arrAccount) {
+            System.out.println("email: " + account.email);
+            System.out.println("full name: " + account.fullName);
+            System.out.println("department: " + account.departmentId.departmentName);
+        }
+
+
+//        Question 9:
+//        In ra thông tin các phòng ban bao gồm: id và name
+        Department[] arrDepartment = new Department[] {depDev, depMarketing, depSale};
+        for (Department department: arrDepartment) {
+            System.out.println("id: " + department.departmentId);
+            System.out.println("name: " + department.departmentName);
+        }
+
+
+//        Question 10:
+//        In ra thông tin các account bao gồm: Email, FullName và tên phòng ban của
+//        họ theo định dạng như sau:
+//        Thông tin account thứ 1 là:
+//        Email: NguyenVanA@gmail.com
+//        Full name: Nguyễn Văn A
+//        Phòng ban: Sale
+//        Thông tin account thứ 2 là:
+//        Email: NguyenVanB@gmail.com
+//        Full name: Nguyễn Văn B
+//        Phòng ban: Marketting
+        for (int i = 0; i< arrAccount.length; i++) {
+            System.out.println("thông tin acccount thứ " + i + 1 + "là:");
+            System.out.println("Email: " + arrAccount[i].email);
+            System.out.println("Full name: " + arrAccount[i].fullName);
+            System.out.println("Phòng ban: " + arrAccount[i].departmentId.departmentName);
+        }
+
+
+//        Question 11:
+//        In ra thông tin các phòng ban bao gồm: id và name theo định dạng sau:
+//        Thông tin department thứ 1 là:
+//        Id: 1
+//        Name: Sale
+//        Thông tin department thứ 2 là:
+//        Id: 2
+//        Name: Marketing
+        for (int i = 0; i< arrDepartment.length; i++) {
+            System.out.println("thông tin department thứ " + i + 1 + "là:");
+            System.out.println("Id: " + arrDepartment[i].departmentId);
+            System.out.println("Name: " + arrDepartment[i].departmentName);
+        }
+
+//        Question 12:
+//        Chỉ in ra thông tin 2 department đầu tiên theo định dạng như Question 10
+        for (int i = 0; i< arrAccount.length; i++) {
+            if (i > 1) break;
+            System.out.println("thông tin acccount thứ " + i + 1 + "là:");
+            System.out.println("Email: " + arrAccount[i].email);
+            System.out.println("Full name: " + arrAccount[i].fullName);
+            System.out.println("Phòng ban: " + arrAccount[i].departmentId.departmentName);
+        }
+//        Question 13:
+//        In ra thông tin tất cả các account ngoại trừ account thứ 2
+        for (int i = 0; i< arrAccount.length; i++) {
+            if (i == 1) continue;
+            System.out.println("thông tin acccount thứ " + i + 1 + "là:");
+            System.out.println("Email: " + arrAccount[i].email);
+            System.out.println("Full name: " + arrAccount[i].fullName);
+            System.out.println("Phòng ban: " + arrAccount[i].departmentId.departmentName);
+        }
+//        Question 14:
+//        In ra thông tin tất cả các account có id < 4
+        for (int i = 0; i< arrAccount.length; i++) {
+            if (arrAccount[i].accountID < 4) {
+                System.out.println("thông tin acccount thứ " + i + 1 + "là:");
+                System.out.println("Email: " + arrAccount[i].email);
+                System.out.println("Full name: " + arrAccount[i].fullName);
+                System.out.println("Phòng ban: " + arrAccount[i].departmentId.departmentName);
+            }
+        }
+
+//        Question 15:
+//        In ra các số chẵn nhỏ hơn hoặc bằng 20
+        for (int i = 0; i <= 20; i++) {
+            if (i%2 == 0) {
+
+                System.out.println(i);
+            }
+        }
+
+
+
+//        Question 16:
+//        Làm lại các Question ở phần FOR bằng cách sử dụng WHILE kết hợp với
+//        lệnh break, continue
+        int i = 0;
+        while (arrAccount[i].accountID < 4 ) {
+            if (i == 1) continue;
+            if (i == 2) break;
+            System.out.println("thông tin acccount thứ " + i + 1 + "là:");
+            System.out.println("Email: " + arrAccount[i].email);
+            System.out.println("Full name: " + arrAccount[i].fullName);
+            System.out.println("Phòng ban: " + arrAccount[i].departmentId.departmentName);
+            i++;
+        }
+
+//
+//
+//        Question 17:
+//        Làm lại các Question ở phần FOR bằng cách sử dụng DO-WHILE kết hợp với
+//        lệnh break, continue
+
+        int x = 0;
+        do {
+            if (i == 1) continue;
+            if (i == 2) break;
+            System.out.println("thông tin acccount thứ " + i + 1 + "là:");
+            System.out.println("Email: " + arrAccount[i].email);
+            System.out.println("Full name: " + arrAccount[i].fullName);
+            System.out.println("Phòng ban: " + arrAccount[i].departmentId.departmentName);
+        } while (x <= 2);
+
+
+
+//        Question 1:
+//        In ngẫu nhiên ra 1 số nguyên
+        Random random = new Random();
+        int z = random.nextInt();
+        System.out.println("số random" + z);
+
+
+//        Question 2:
+//        In ngẫu nhiên ra 1 số thực
+        double v = Math.random();
+        System.out.println(v);
+
+//        Question 3:
+//        Khai báo 1 array bao gồm các tên của các bạn trong lớp, sau đó in ngẫu nhiên ra tên của 1 bạn
+        int indexRandom = random.nextInt(arrAccount.length);
+        System.out.println("Tên bạn ngẫu nhiên: " + arrAccount[indexRandom].fullName);
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
