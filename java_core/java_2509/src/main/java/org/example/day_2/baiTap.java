@@ -32,7 +32,6 @@ public class baiTap {
 
         //    Question 3:
         //    Sử dụng toán tử ternary để làm Question 1
-        String departmentId = null;
         String textDepartment = "";
         textDepartment = departmentId == null ? "Nhân viên này chưa có phòng ba" : "Phòng ban của nhân viên này là …";
         System.out.println(textDepartment);
