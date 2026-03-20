@@ -22,4 +22,14 @@ public class Group {
     public int hashCode() {
         return Objects.hash(groupId, groupName, creatorId, createDate);
     }
+
+    @Override
+    public String toString() {
+        return "Group{" +
+                "groupId=" + groupId +
+                ", groupName='" + groupName + '\'' +
+                ", creatorId=" + creatorId +
+                ", createDate='" + createDate + '\'' +
+                '}';
+    }
 }

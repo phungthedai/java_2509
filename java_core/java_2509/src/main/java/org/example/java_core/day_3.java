@@ -2,6 +2,7 @@ package org.example.java_core;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
 
 public class day_3 {
@@ -98,35 +99,61 @@ public class day_3 {
         System.out.println("nhap vao ten:");
         String ten = scanner.nextLine();
         System.out.println("ho va ten: " + ho + ' ' + ten);
+        scanner.close();
     }
 
 //   Exercise 1
-//    Question 2:
-//    Lấy ngẫu nhiên 1 số có 5 chữ số (những số dưới 5 chữ số thì sẽ thêm có số 0 ở đầu cho      đủ 5 chữ số)
-//
-//
+//    Question 2: Lấy ngẫu nhiên 1 số có 5 chữ số (những số dưới 5 chữ số thì sẽ thêm có số 0 ở đầu cho đủ 5 chữ số)
+    public static String getRandom() {
+        Random rand = new Random();
+        int number = rand.nextInt(100000);
+        System.out.printf("số random là: %05d", number);
+        return String.format("%05d", number);
+    }
+
 //    Question 3:
 //    Lấy 2 số cuối của số ở Question 2 và in ra.
 //    Gợi ý:
 //    Cách 1: convert số có 5 chữ số ra String, sau đó lấy 2 số cuối
 //    Cách 2: chia lấy dư số đó cho 100
-//
+    public static void layHaiSoCuoi() {
+        String randomNumber = getRandom();
+        System.out.println("số ban đầu: " + randomNumber);
+        System.out.println("2 số cuối: " + randomNumber.charAt(randomNumber.length()-1) + randomNumber.charAt(randomNumber.length()-2));
+    }
 //
 //    Question 4:
 //    Viết 1 method nhập vào 2 số nguyên a và b và trả về thương của chúng.
-
-
+    public static void tinhThuong() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap vao so nguyen a:");
+        int soNguyenA = scanner.nextInt();
+        System.out.println("nhap vao so nguyen b:");
+        int soNguyenB = scanner.nextInt();
+        System.out.print("ho va ten: " + ((float)soNguyenA/soNguyenB));
+    }
 
 //    Exercise 3
 //    Question 3:
 //    Khởi tạo 1 số Integer có value là chữ "1234567"
 //    Sau đó convert số trên thành datatype int
-
-
+    public static void convertInt() {
+        Integer number = Integer.valueOf ("1234567");
+        int getNumber = number.intValue();
+        System.out.println(getNumber);
+    }
 
 //    Exercise 4
 //    Question 3:
 //    Viết chương trình để người dùng nhập vào tên và kiểm tra, nếu tên chữ viết hoa chữ cái đầu thì viết hoa lên.
+       public static void kiemTraVietHoa() {
+           Scanner scanner = new Scanner(System.in);
+           System.out.println("nhap vao ten:");
+           String ten = scanner.nextLine();
+           String upCase = ten.substring(0, 1).toUpperCase() + ten.substring(1);
+           System.out.println(upCase);
+           scanner.close();
+        }
 //    Question 4:
 //    Viết chương trình để người dùng nhập vào tên in từng ký tự trong tên của người dùng ra
 //    VD:
@@ -134,6 +161,15 @@ public class day_3 {
 //        "Ký tự thứ 1 là: N"
 //                "Ký tự thứ 1 là: A"
 //                "Ký tự thứ 1 là: M"
+    public static void inKyTu() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap vao ten:");
+        String ten = scanner.nextLine();
+        for (int i = 0; i < ten.length(); i++) {
+            System.out.println(ten.charAt(i));
+        }
+        scanner.close();
+    }
 //    Question 6:
 //    Viết chương trình yêu cầu người dùng nhập vào họ và tên đầy đủ và sau đó hệ thống sẽ tách ra họ, tên , tên đệm
 //    VD:
@@ -142,44 +178,120 @@ public class day_3 {
 //    "Họ là: Nguyễn"
 //            "Tên đệm là: Văn"
 //            "Tên là: Nam"
+    public static void tachTen() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap vao ten:");
+        String ten = scanner.nextLine();
+        String[] arrTen = ten.split(" ");
+        for (int i = 0; i < arrTen.length; i++) {
+            if (i == 0) {
+                System.out.println("Họ là: " + arrTen[i]);
+            } else if (arrTen.length - 1 == i) {
+                System.out.println("Tên là: " + arrTen[i]);
+            } else {
+                System.out.println("Tên đệm là: " + arrTen[i]);
+            }
+        }
+        scanner.close();
+    }
 //    Question 7:
 //    Viết chương trình yêu cầu người dùng nhập vào họ và tên đầy đủ và chuẩn hóa họ và tên của họ như sau:
 //    a) Xóa dấu cách ở đầu và cuối và giữa của chuỗi người dùng nhập vào
-//    VD: Nếu người dùng nhập vào " nguyễn văn nam " thì sẽ chuẩn hóa thành "nguyễn văn   nam"
+//    VD: Nếu người dùng nhập vào " nguyễn văn nam " thì sẽ chuẩn hóa thành "nguyễn văn nam"
 //    b) Viết hoa chữ cái mỗi từ của người dùng
 //    VD: Nếu người dùng nhập vào " nguyễn văn nam " thì sẽ chuẩn hóa thành "Nguyễn Văn Nam"
-//
-//
+
+    public static void chuanHoaChuoi() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap vao ho ten:");
+        String ten = scanner.nextLine();
+        ten = ten.trim().replaceAll("\\s+", " ");
+        String[] arrTen = ten.split(" ");
+        String tenSauChuanHoa = "";
+
+        for (int i = 0; i < arrTen.length; i++) {
+            tenSauChuanHoa =  tenSauChuanHoa + (arrTen[i].substring(0, 1).toUpperCase() + arrTen[i].substring(1));
+            if (i < arrTen.length - 1) {
+                tenSauChuanHoa = tenSauChuanHoa + " ";
+            }
+        }
+        System.out.println("Tên sau khi chuân hoá: " + tenSauChuanHoa);
+        scanner.close();
+    }
+
 //    Question 8:
 //    In ra tất cả các group có chứa chữ "Java"
-//
-//
+    public static void inGroupJava() {
+        Group[] arrGroups = new Group[]{};
+        for (Group group: arrGroups) {
+            if (group.groupName.contains("Java")) {
+                group.toString();
+            }
+        }
+    }
 //    Question 9:
 //    In ra tất cả các group "Java"
-//
-//
+    public static void inGroupLaJava() {
+        Group[] arrGroups = new Group[]{};
+        for (Group group: arrGroups) {
+            if (group.groupName.equals("Java")) {
+                group.toString();
+            }
+        }
+    }
 //    Question 10:
 //    Kiểm tra 2 chuỗi có là đảo ngược của nhau hay không.
 //    Nếu có xuất ra “OK” ngược lại “KO”.
 //    Ví dụ “word” và “drow” là 2 chuỗi đảo ngược nhau.
-//
-//
+    public static void chuoiDaoNguocCuaNhau(String chuoi1, String chuoi2) {
+        boolean chuoiDaoNguoc = true;
+        for (int i = 0; i < chuoi1.length(); i++) {
+            if (chuoi1.charAt(i) != chuoi2.charAt(chuoi2.length() - i - 1)) {
+                chuoiDaoNguoc = false;
+            }
+        }
+        if (chuoiDaoNguoc) {
+            System.out.println('"' + chuoi1 + '"' + "ngược lại" + '"' + chuoi2 + '"');
+        }
+    }
+
+
 //    Question 11: Count special Character
 //    Tìm số lần xuất hiện ký tự "a" trong chuỗi
-//
-//
+    public static void soLanASuatHien(String string) {
+        int count = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == 'a' ) {
+                count++;
+            }
+        }
+        System.out.println("số lần suất hiện 'a': " + count);
+    }
 //    Question 12: Reverse String
 //    Đảo ngược chuỗi sử dụng vòng lặp
-//
-//
+    public static void daoNguoChuoi(String string) {
+        String newString = "";
+        for (int i = string.length(); i == 0; i--) {
+            newString += string.charAt(i);
+        }
+        System.out.println("chuoi dao ngược: " + newString);
+    }
 //    Question 13:
 //    String not contains digit
 //    Kiểm tra một chuỗi có chứa chữ số hay không, nếu có in ra false ngược lại true.
 //    Ví dụ:
 //            "abc" => true
 //            "1abc", "abc1", "123", "a1bc", null => false
-//
-//
+    public static void kiemTraChuoi(String string) {
+        boolean key = true;
+        for (int i = 0; i < string.length(); i++) {
+            if (Character.isDigit(string.charAt(i))) {
+                key = false;
+                break;
+            }
+        }
+        System.out.println(key);
+    }
 //    Question 14: Replace character
 //    Cho một chuỗi str, chuyển các ký tự được chỉ định sang một ký tự khác cho trước.
 //    Ví dụ:
@@ -194,7 +306,7 @@ public class day_3 {
 //
 //
 //    Question 16:
-//    Cho một chuỗi str và số nguyên n >= 0. Chia chuỗi str ra làm các phần bằng nhau với n    ký tự. Nếu chuỗi không chia được thì xuất ra màn hình “KO”.
+//    Cho một chuỗi str và số nguyên n >= 0. Chia chuỗi str ra làm các phần bằng nhau với n ký tự. Nếu chuỗi không chia được thì xuất ra màn hình “KO”.
 
 
 
