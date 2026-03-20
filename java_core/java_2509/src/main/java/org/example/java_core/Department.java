@@ -1,4 +1,4 @@
-package org.example.day_1_java_core;
+package org.example.java_core;
 
 public class Department {
     int departmentId;

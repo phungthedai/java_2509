@@ -1,6 +1,8 @@
-package org.example.day_1_java_core;
+package org.example.java_core;
 
+import java.text.SimpleDateFormat;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Program {
     public static void main() {
@@ -418,6 +420,100 @@ public class Program {
         int indexRandom = random.nextInt(arrAccount.length);
         System.out.println("Tên bạn ngẫu nhiên: " + arrAccount[indexRandom].fullName);
 
+
+        getDateExam(exam1.createDate);
+        Exam[] arrExam = new Exam[]{exam1, exam2, exam3};
+        for (Exam exam : arrExam) {
+            System.out.println(printfDateTime(exam));
+        }
+
+        inThongTinAccount(arrAccount);
+    }
+
+//        Question 1:
+//        In ra thông tin Exam thứ 1 và property create date sẽ được format theo định
+//        dạng vietnamese
+     public static void getDateExam(String createDate) {
+        String pattern = "dd/MM/yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        System.out.println(simpleDateFormat.format(createDate));
+    }
+
+//
+//
+//        Question 2:
+//        In ra thông tin: Exam đã tạo ngày nào theo định dạng
+//        Năm – tháng – ngày – giờ – phút – giây
+    public static String printfDateTime (Exam exam) {
+        String pattern = "yyyy-MM-dd-hh-mm-ss";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        return simpleDateFormat.format(exam.createDate);
+    }
+
+//    Question 1:
+//    Viết lệnh cho phép người dùng nhập 3 số nguyên vào chương trình.
+    public static void inputThreeNumber () {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập vào số thứ nhất:");
+        int so1 = scanner.nextInt();
+        System.out.println("Nhập vào số thứ hai:");
+        int so2 = scanner.nextInt();
+        System.out.println("Nhập vào số thứ ba:");
+        int so3 = scanner.nextInt();
+    }
+//    Question 2:
+//    Viết lệnh cho phép người dùng nhập 2 số thực vào chương trình.
+    public static void nhapHaiSoThuc () {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập vào số thực thứ nhất:");
+        float so1 = scanner.nextFloat();
+        System.out.println("Nhập vào số thực thứ hai:");
+        float so2 = scanner.nextFloat();
+    }
+//    Question 3:
+//    Viết lệnh cho phép người dùng nhập họ và tên.
+    public static void nhapHoTen () {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập họ và tên:");
+        String so1 = scanner.nextLine();
+    }
+//    Question 4:
+//    Viết lệnh cho phép người dùng nhập vào ngày sinh nhật của họ.
+    public static void nhapNgaySinhNhat  () {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập ngày sinh nhật:");
+        String so1 = scanner.nextLine();
+    }
+
+//    Question 1:
+//    Tạo method để in ra các số chẵn nguyên dương nhỏ hơn 10
+    public static void soChanNguyenDuong  () {
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+//    Question 2:
+//    Tạo method để in thông tin các account
+    public static void inThongTinAccount (Account[] accounts) {
+        for (Account account : accounts) {
+            System.out.println("ID: " + account.accountID);
+            System.out.println("Full name: " + account.fullName);
+            System.out.println("user name: " + account.userName);
+            System.out.println("Email: " + account.email);
+            System.out.println("Departnemt: " + account.departmentId);
+            System.out.println("Group: " + account.groupId);
+            System.out.println("position: " + account.positionId);
+            System.out.println("Create date: " + account.createDate);
+        }
+    }
+//    Question 3:
+//    Tạo method để in ra các số nguyên dương nhỏ hơn 1
+    public static void soNguyenDuong  () {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
 }
 
