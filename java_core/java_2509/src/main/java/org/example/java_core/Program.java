@@ -515,6 +515,113 @@ public class Program {
             System.out.println(i);
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //    Exercise 5: Object’s Method
+//    Question 1:
+//    In ra thông tin của phòng ban thứ 1 (sử dụng toString())
+    public static void inThonTinPhongBan(Department department) {
+        System.out.println(department.toString());
+    }
+//    Question 2:
+//    In ra thông tin của tất cả phòng ban (sử dụng toString())
+    public static void inThonTinTatCaPhongBan(Department[] departments) {
+        for (int i = 0; i < departments.length; i++) {
+            inThonTinPhongBan(departments[i]);
+        }
+    }
+//    Question 3:
+//    In ra địa chỉ của phòng ban thứ 1
+    public static void inDiaChiPhongBan(Department department) {
+        System.out.println(department.address);
+    }
+//    Question 4: Kiểm tra xem phòng ban thứ 1 có tên là "Phòng A" không?
+    public static void kiemTraTenPhongBan(Department department, String name) {
+        if (department.departmentName.equals(name)) {
+            System.out.println("yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+//    Question 5:
+//    So sánh 2 phòng ban thứ 1 và phòng ban thứ 2 xem có bằng nhau không (bằng nhau khi tên của 2 phòng ban đó bằng nhau)
+    public static void soSanhHaiPhongBan(Department department, Department department2) {
+        if (department.departmentName.equals(department2.departmentName)) {
+            System.out.println("Bằng nhau");
+        } else {
+            System.out.println("Không Bằng Nhau");
+        }
+    }
+//    Question 6:
+//    Khởi tạo 1 array phòng ban gồm 5 phòng ban, sau đó in ra danh sách phòng ban theo thứ tự tăng dần theo tên (sắp xếp theo vần ABCD)
+//    VD:
+//    Accounting
+//    Boss of director
+//            Marketing
+//    Sale
+//    Waiting room
+
+    public static void sapXepPhongBan() {
+        Department[] arrDepartment = new Department[5];
+        for (int i = 0; i < arrDepartment.length; i++) {
+            for (int j = i + 1; j < arrDepartment.length - 1; j++) {
+                if (arrDepartment[i].departmentName.compareTo(arrDepartment[j].departmentName) > 0) {
+                    Department tg = arrDepartment[i];
+                    arrDepartment[i] = arrDepartment[j];
+                    arrDepartment[j] = tg;
+                }
+            }
+        }
+    }
+
+//    Question 7:
+//    Khởi tạo 1 array học sinh gồm 5 Phòng ban, sau đó in ra dan sách phòng ban được sắp xếp theo tên
+//    VD:
+//    Accounting
+//    Boss of director
+//            Marketing
+//    waiting room
+//    Sale
+
+    public static void sapXepHocSinhTheoTen() {
+        Account[] arrAccount = new Account[5];
+        for (int i = 0; i < arrAccount.length; i++) {
+            for (int j = i + 1; j < arrAccount.length - 1; j++) {
+                if (arrAccount[i].fullName.compareTo(arrAccount[j].fullName) > 0) {
+                    Account tg = arrAccount[i];
+                    arrAccount[i] = arrAccount[j];
+                    arrAccount[j] = tg;
+                }
+            }
+        }
+    }
 }
 
 

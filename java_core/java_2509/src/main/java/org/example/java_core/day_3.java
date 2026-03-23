@@ -102,6 +102,21 @@ public class day_3 {
         scanner.close();
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   Exercise 1
 //    Question 2: Lấy ngẫu nhiên 1 số có 5 chữ số (những số dưới 5 chữ số thì sẽ thêm có số 0 ở đầu cho đủ 5 chữ số)
     public static String getRandom() {
@@ -271,7 +286,7 @@ public class day_3 {
 //    Đảo ngược chuỗi sử dụng vòng lặp
     public static void daoNguoChuoi(String string) {
         String newString = "";
-        for (int i = string.length(); i == 0; i--) {
+        for (int i = string.length()-1; i >= 0; i--) {
             newString += string.charAt(i);
         }
         System.out.println("chuoi dao ngược: " + newString);
@@ -296,59 +311,37 @@ public class day_3 {
 //    Cho một chuỗi str, chuyển các ký tự được chỉ định sang một ký tự khác cho trước.
 //    Ví dụ:
 //            "VTI Academy" chuyển ký tự 'e' sang '*' kết quả " VTI Acad*my"
-//
-//
+    public static void thayDoiKyTu(String string, char char1, char char2) {
+        String newString = string.replace(char1, char2);
+        System.out.println(newString);
+    }
 //    Question 15: Revert string by word
 //    Đảo ngược các ký tự của chuỗi cách nhau bởi dấu cách mà không dùng thư viện.
 //    Ví dụ: " I am developer " => "developer am I".
 //    Các ký tự bên trong chỉ cách nhau đúng một dấu khoảng cách.
 //    Gợi ý: Các bạn cần loại bỏ dấu cách ở đầu và cuối câu, thao tác cắt chuỗi theo dấu cách
-//
-//
+    public static void daoNguocChuoi(String string) {
+        String[] newString = string.trim().split(" ");
+        String chuoiDaoNguoc = "";
+        for (int i = newString.length -1 ; i >= 0; i--) {
+            chuoiDaoNguoc += newString[i];
+            if (i > 0) {
+                chuoiDaoNguoc += " ";
+            }
+        }
+        System.out.println("Chuoi dao nguoc: " + chuoiDaoNguoc);
+    }
 //    Question 16:
 //    Cho một chuỗi str và số nguyên n >= 0. Chia chuỗi str ra làm các phần bằng nhau với n ký tự. Nếu chuỗi không chia được thì xuất ra màn hình “KO”.
-
-
-
-
-//    Exercise 5: Object’s Method
-//    Question 1:
-//    In ra thông tin của phòng ban thứ 1 (sử dụng toString())
-//
-//
-//    Question 2:
-//    In ra thông tin của tất cả phòng ban (sử dụng toString())
-//
-//
-//    Question 3:
-//    In ra địa chỉ của phòng ban thứ 1
-//
-//
-//    Question 4: Kiểm tra xem phòng ban thứ 1 có tên là "Phòng A" không?
-//
-//
-//    Question 5:
-//    So sánh 2 phòng ban thứ 1 và phòng ban thứ 2 xem có bằng nhau không (bằng nhau khi tên của 2 phòng ban đó bằng nhau)
-//
-//
-//    Question 6:
-//    Khởi tạo 1 array phòng ban gồm 5 phòng ban, sau đó in ra danh sách phòng ban theo thứ tự tăng dần theo tên (sắp xếp theo vần ABCD)
-//    VD:
-//    Accounting
-//    Boss of director
-//            Marketing
-//    Sale
-//    Waiting room
-//
-//
-//    Question 7:
-//    Khởi tạo 1 array học sinh gồm 5 Phòng ban, sau đó in ra dan sách phòng ban được sắp xếp theo tên
-//    VD:
-//    Accounting
-//    Boss of director
-//            Marketing
-//    waiting room
-//    Sale
+    public static void chiaChuoi(String string, int soChia) {
+        if (string.length() % soChia == 0 ) {
+            System.out.println("KO");
+        } else {
+            for (int i = 0; i < string.length(); i += soChia) {
+                System.out.println(string.substring(i, i + soChia));
+            }
+        }
+    }
 
 
 }

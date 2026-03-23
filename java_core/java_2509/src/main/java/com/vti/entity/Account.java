@@ -1,20 +1,100 @@
-package org.example.java_core;
+package com.vti.entity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
 public class Account {
-    int accountID;
-    String email;
-    String userName;
-    String firstName;
-    String lastName;
-    String fullName;
-    Group groupId;
-    Department departmentId;
-    Position positionId;
-    String createDate;
+    private int accountID;
+    private String email;
+    private String userName;
+    private String firstName;
+    private String lastName;
+    private String fullName;
+    private Group groupId;
+    private Department departmentId;
+    private Position positionId;
+    private String createDate;
+
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
+    }
+
+    public void setPositionId(Position positionId) {
+        this.positionId = positionId;
+    }
+
+    public void setDepartmentId(Department departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    public void setGroupId(Group groupId) {
+        this.groupId = groupId;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setAccountID(int accountID) {
+        this.accountID = accountID;
+    }
+
+    public int getAccountID() {
+        return accountID;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public Group getGroupId() {
+        return groupId;
+    }
+
+    public Department getDepartmentId() {
+        return departmentId;
+    }
+
+    public Position getPositionId() {
+        return positionId;
+    }
+
+    public String getCreateDate() {
+        return createDate;
+    }
 
     @Override
     public String toString() {
@@ -41,7 +121,6 @@ public class Account {
     public int hashCode() {
         return Objects.hash(accountID, email, userName, fullName, groupId, departmentId, positionId, createDate);
     }
-
 
 //    Không có parameters
 
