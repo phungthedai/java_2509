@@ -4,43 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886f37f4-e63a-4dc4-8098-c0bf8fe3ff10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/backend/Excercise1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/backend/Excercise2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/backend/Excercise3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Account2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/CategoryQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/CanBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/CongNhan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/GioiTinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/KySu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/NhanVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/QuanLyCanBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/ExamQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/GroupAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/NamePosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/NameTypeQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/TypeQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/frontend/Program1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/frontend/Program2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/frontend/Program3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/day_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/day_3.java" afterDir="false" />
+    <list default="true" id="886f37f4-e63a-4dc4-8098-c0bf8fe3ff10" name="Changes" comment="day 4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/CongNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/HeThong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/QuanLyCanBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/CreateHighSchoolStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/HighSchoolStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/Bao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/QLTV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/QuanLySach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/Sach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/TaiLieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/TapChi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/CanBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/CanBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/CongNhan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/GioiTinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/GioiTinh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/KySu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/KySu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/NhanVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/QuanLyCanBo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,23 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Program1.executor": "Run",
-    "Application.day_3.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/daiph/OneDrive/Máy tính/java_2509/java_core/java_2509/src/main/java/com/vti/entity",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Program1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.day_3.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/daiph/OneDrive/Máy tính/java_2509/java_core/java_2509/src/main/java/com/vti/entity&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\daiph\OneDrive\Máy tính\java_2509\java_core\java_2509\src\main\java\com\vti\entity" />
@@ -144,6 +128,19 @@
       <option name="presentableId" value="Default" />
       <updated>1774082118833</updated>
     </task>
+    <task id="LOCAL-00001" summary="day 4">
+      <option name="closed" value="true" />
+      <created>1774288390259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774288390259</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4" />
   </component>
 </project>

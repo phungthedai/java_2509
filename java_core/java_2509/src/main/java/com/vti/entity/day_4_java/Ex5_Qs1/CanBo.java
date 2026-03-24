@@ -1,4 +1,4 @@
-package com.vti.entity.Ex5Qs1;
+package com.vti.entity.day_4_java.Ex5_Qs1;
 
 public class CanBo {
     private String hoTen;
@@ -48,7 +48,6 @@ public class CanBo {
     }
 
     public void hienThiThongTin() {
-
         System.out.println("Họ tên: " + hoTen +
                 ", Tuổi: " + tuoi +
                 ", Giới tính: " + gioiTinh +
