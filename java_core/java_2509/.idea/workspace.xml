@@ -5,26 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="886f37f4-e63a-4dc4-8098-c0bf8fe3ff10" name="Changes" comment="day 4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/CongNhan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/HeThong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/QuanLyCanBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/CreateHighSchoolStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/HighSchoolStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs3/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/Bao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/QLTV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/QuanLySach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/Sach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/TaiLieu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs4/TapChi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex1/Qs1/INews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex1/Qs1/MyNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex1/Qs1/New.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex1/Qs1/QLNew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex1/Qs2/IStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex2/Qs1/HeThong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex2/Qs1/IStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex2/Qs1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex6_Qs1/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex6_Qs1/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_5_java/Ex6_Qs1/VietnamPhone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/CanBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/CanBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/CongNhan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/GioiTinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/GioiTinh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/KySu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/KySu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/NhanVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/NhanVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/Ex5Qs1/QuanLyCanBo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/CongNhan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vti/entity/day_4_java/Ex5_Qs1/CongNhan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -136,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774288390259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day 4">
+      <option name="closed" value="true" />
+      <created>1774374968733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774374968733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

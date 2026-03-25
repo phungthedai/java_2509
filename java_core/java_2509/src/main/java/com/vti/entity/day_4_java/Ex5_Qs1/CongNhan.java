@@ -19,6 +19,7 @@ public class CongNhan extends CanBo {
             this.bac = 10;
         } else this.bac = bac;
     }
+    @Override
     public void hienThiThongTin() {
         super.hienThiThongTin();
         System.out.println("Bậc: " + bac);
