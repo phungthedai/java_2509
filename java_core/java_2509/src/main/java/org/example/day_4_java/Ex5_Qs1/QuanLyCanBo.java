@@ -14,18 +14,15 @@ public class QuanLyCanBo {
     public void themCanBo() {
         int choice;
         while (true) {
-            System.out.println("Chọn loại cán bộ: \n1.Cán Bộ \n2.Công nhân \n3.Kỹ sư \n 3.Nhân viên");
+            System.out.println("Chọn loại cán bộ: \n1.Cán Bộ \n2.Công nhân \n3.Kỹ sư \n4.Nhân viên");
             choice = scanner.nextInt();
             scanner.nextLine();
-            if (scanner.hasNextInt()) {
-                if (choice >= 1 && choice <= 4) {
-                    break;
-                } else {
-                    System.out.println("chọn từ 1 đến 4");
-                }
+            if (choice >= 1 && choice <= 4) {
+                break;
             } else {
-                System.out.println("nhập vào số");
+                System.out.println("chọn từ 1 đến 4");
             }
+
         };
 
         System.out.print("Nhập họ tên: ");
@@ -36,14 +33,10 @@ public class QuanLyCanBo {
             System.out.print("Nhập tuổi: ");
             tuoi = scanner.nextInt();
             scanner.nextLine();
-            if (scanner.hasNextInt()) {
-                if (tuoi >= 0) {
-                    break;
-                } else {
-                    System.out.println("Tuổi không được âm");
-                }
+            if (tuoi >= 0) {
+                break;
             } else {
-                System.out.println("nhập vào dạng số");
+                System.out.println("Tuổi không được âm");
             }
         };
 
@@ -69,14 +62,10 @@ public class QuanLyCanBo {
                     System.out.print("Nhập bậc (1 -> 10): ");
                     bac = scanner.nextInt();
                     scanner.nextLine();
-                    if (scanner.hasNextInt()) {
-                        if (bac > 0 && bac <= 10) {
-                            break;
-                        } else {
-                            System.out.println("Nhập lại");
-                        }
+                    if (bac > 0 && bac <= 10) {
+                        break;
                     } else {
-                        System.out.println("nhập vào số");
+                        System.out.println("Nhập lại");
                     }
                 };
                 danhSach.add(new CongNhan(hoTen, tuoi, gioiTinh, diaChi, bac));

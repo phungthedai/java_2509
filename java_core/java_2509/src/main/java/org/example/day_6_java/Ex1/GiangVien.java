@@ -7,10 +7,12 @@ public class GiangVien extends Person {
     private double luong;
     private PhongBan phongBan;
 
-    public GiangVien( String ten, int tuoi, String gioiTinh, String ngaySinh, String diaChi, String maGv, double luong) {
+    public GiangVien( String ten, int tuoi, String gioiTinh, String ngaySinh, String diaChi, String maGv, double luong, PhongBan phongBan) {
         super(ten, tuoi, gioiTinh, ngaySinh, diaChi);
         this.maGv = maGv;
         this.luong = luong;
+        this.phongBan = phongBan;
+        phongBan.themGiangVien(this);
     }
 
 
@@ -20,6 +22,10 @@ public class GiangVien extends Person {
 
     public void assignHomework() {
         System.out.println("Giáo viên " + ten + " đã giao bài tập cho lớp.");
+    }
+
+    public void setPhongBan(PhongBan phongBan) {
+        this.phongBan = phongBan;
     }
 
     public String getTen() {

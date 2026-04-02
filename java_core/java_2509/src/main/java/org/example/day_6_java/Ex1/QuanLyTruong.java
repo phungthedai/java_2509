@@ -320,7 +320,5 @@ public class QuanLyTruong {
             double MT = sv.getDiemTheoTen("Management Tool");
             System.out.printf(rowFormat,  sv.ten, sv.getMaSv(), sv.ngaySinh, PTYC , TKPM, LTJ, CT, MT, sv.tinhDiemTB());
         }
-
-
     }
 }

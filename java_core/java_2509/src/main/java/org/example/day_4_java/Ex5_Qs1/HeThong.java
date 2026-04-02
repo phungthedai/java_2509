@@ -12,10 +12,10 @@ public class HeThong {
             System.out.println("3. Hiển thị danh sách");
             System.out.println("4. Xóa cán bộ");
             System.out.println("5. Thoát");
+
             int choice = scanner.nextInt();
             scanner.nextLine();
-            if (scanner.hasNextInt()) {
-                if ( choice >= 1 && choice <= 5) {
+            if ( choice >= 1 && choice <= 5) {
                     switch (choice) {
                         case 1:
                             quanLyCanBo.themCanBo();
@@ -32,7 +32,6 @@ public class HeThong {
                         case 5:
                             return;
                     }
-                } else System.out.println("Nhập số từ 1 đến 5");
             } else System.out.println("Nhập số từ 1 đến 5");
         }
     }

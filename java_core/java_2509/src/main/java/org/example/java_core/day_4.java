@@ -1,5 +1,8 @@
 package org.example.java_core;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class day_4 {
     static void main(String[] args) {
         Department department = new Department();
@@ -14,7 +17,11 @@ public class day_4 {
 
 
         Group group = new Group();
-        Group group1 = new Group("gr1", account1, new Account[] {account1, account2, account3}, "22-11-2022");
+        ArrayList<Account> listAccount = new ArrayList<>();
+        listAccount.add(account1);
+        listAccount.add(account2);
+        listAccount.add(account3);
+        Group group1 = new Group("gr1", account1, listAccount, "22-11-2022");
         Group group2 = new Group("gr2", account1, new String[] {"acc1", "acc2", "acc3"}, "22-11-2026");
     }
 }
