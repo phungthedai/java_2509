@@ -4,35 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="886f37f4-e63a-4dc4-8098-c0bf8fe3ff10" name="Changes" comment="day 6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_1/Qs_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_2/InvalidAgeInputingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_2/Qs1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_2/Qs3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_2/Qs4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_2/Qs5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_7_java/Ex_2/ScannerUtils.java" afterDir="false" />
+    <list default="true" id="886f37f4-e63a-4dc4-8098-c0bf8fe3ff10" name="Changes" comment="day 7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex1/Qs1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex1/Qs1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex1/Qs3/MyMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex2/Qs1/MyMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex2/Qs2/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex3/Qs1/CheckFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/day_8_java/Ex3/Qs2/CreateFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/day_4_java/Ex5_Qs1/HeThong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/day_4_java/Ex5_Qs1/HeThong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/day_4_java/Ex5_Qs1/QuanLyCanBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/day_4_java/Ex5_Qs1/QuanLyCanBo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/day_6_java/Ex1/GiangVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/day_6_java/Ex1/GiangVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/day_6_java/Ex1/PhongBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/day_6_java/Ex1/PhongBan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/day_6_java/Ex1/QuanLyTruong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/day_6_java/Ex1/QuanLyTruong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_core/day_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_core/day_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/day_4_java/Ex5_Qs1/HeThong.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/day_4_java/Ex5_Qs1/HeThong.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/day_4_java/Ex5_Qs1/QuanLyCanBo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/day_4_java/Ex5_Qs1/QuanLyCanBo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/day_6_java/Ex1/GiangVien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/day_6_java/Ex1/GiangVien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/day_6_java/Ex1/PhongBan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/day_6_java/Ex1/PhongBan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/day_6_java/Ex1/QuanLyTruong.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/day_6_java/Ex1/QuanLyTruong.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/java_core/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/java_core/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/java_core/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/java_core/Department.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/java_core/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/java_core/Group.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/java_core/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/java_core/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/java_core/day_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/java_core/day_4.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +50,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CheckFile.executor": "Run",
     "Application.HeThong.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.Mian.executor": "Run",
+    "Application.MyMath.executor": "Run",
     "Application.Program1.executor": "Run",
     "Application.Qs1.executor": "Run",
     "Application.Qs3.executor": "Run",
@@ -96,13 +81,13 @@
       <recent name="C:\Users\daiph\OneDrive\Máy tính\java_2509\java_core\java_2509\src\main\java\com\vti\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Qs4">
-    <configuration name="HeThong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.day_4_java.Ex5_Qs1.HeThong" />
+  <component name="RunManager" selected="Application.CheckFile">
+    <configuration name="CheckFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.day_8_java.Ex3.Qs1.CheckFile" />
       <module name="java_2509" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.day_4_java.Ex5_Qs1.*" />
+          <option name="PATTERN" value="org.example.day_8_java.Ex3.Qs1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Qs1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.day_7_java.Ex_2.Qs1" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.day_8_java.Ex1.Qs1.Main" />
       <module name="java_2509" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.day_7_java.Ex_2.*" />
+          <option name="PATTERN" value="org.example.day_8_java.Ex1.Qs1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Qs3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.day_7_java.Ex_2.Qs3" />
+    <configuration name="MyMath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.day_8_java.Ex2.Qs1.MyMath" />
       <module name="java_2509" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.day_7_java.Ex_2.*" />
+          <option name="PATTERN" value="org.example.day_8_java.Ex2.Qs1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CheckFile" />
+        <item itemvalue="Application.MyMath" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Qs4" />
         <item itemvalue="Application.Qs5" />
-        <item itemvalue="Application.Qs3" />
-        <item itemvalue="Application.Qs1" />
-        <item itemvalue="Application.HeThong" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +212,22 @@
       <option name="project" value="LOCAL" />
       <updated>1774629572140</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="day 7">
+      <option name="closed" value="true" />
+      <created>1775149119315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775149119315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day 4" />
     <MESSAGE value="day 5" />
     <MESSAGE value="day 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 6" />
+    <MESSAGE value="day 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 7" />
   </component>
 </project>
