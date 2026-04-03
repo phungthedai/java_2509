@@ -6,10 +6,18 @@ public class Main {
     static void main(String[] args) {
 
         ArrayList<Student> listStudent = new ArrayList<>();
-        listStudent.add(new Student(1, "Nguyễn Văn A"));
-        listStudent.add(new Student(2, "Nguyễn Văn B"));
-        listStudent.add(new Student(3, "Nguyễn Văn C"));
+
         Student.setCollege("Đại học bách khoa");
+
+        for (int i = 0; i < Student.getMaxStudent(); i++) {
+            if (i < 2) {
+                listStudent.add(new PrimaryStudent(i, "Nguyễn Văn" + i));
+            } else listStudent.add(new SecondaryStudent(i, "Nguyễn Văn" + i));
+        }
+
+        System.out.println(Student.getCountStudent());
+        System.out.println(PrimaryStudent.getCountPrimaryStudent());
+        System.out.println(SecondaryStudent.getCountSecondaryStudent());
 
 //        for (Student student: listStudent) {
 //            System.out.println(student.getId());
@@ -18,24 +26,25 @@ public class Main {
 //        }
 //
 //        Student.setCollege("Đại học công nghệ");
-        for (Student student: listStudent) {
-            Student.setMoneyGroup(100);
-        }
 
-        System.out.println("std 1 lấy 50k");
-        System.out.println(Student.getMoneyGroup(50));
-
-        System.out.println("std 2 lấy 50k");
-        System.out.println(Student.getMoneyGroup(50));
-
-        System.out.println("std 1 lấy 150k");
-        System.out.println(Student.getMoneyGroup(150));
-
-        for (Student student: listStudent) {
-            Student.setMoneyGroup(50);
-        }
-
-        System.out.println("số tiên con lai");
-        System.out.println(Student.getMoneyGroup(0));
+//        for (Student student: listStudent) {
+//            Student.setMoneyGroup(100);
+//        }
+//
+//        System.out.println("std 1 lấy 50k");
+//        System.out.println(Student.getMoneyGroup(50));
+//
+//        System.out.println("std 2 lấy 50k");
+//        System.out.println(Student.getMoneyGroup(50));
+//
+//        System.out.println("std 1 lấy 150k");
+//        System.out.println(Student.getMoneyGroup(150));
+//
+//        for (Student student: listStudent) {
+//            Student.setMoneyGroup(50);
+//        }
+//
+//        System.out.println("số tiên con lai");
+//        System.out.println(Student.getMoneyGroup(0));
     }
 }

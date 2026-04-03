@@ -4,8 +4,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ScannerUtils {
-
-    public  int inputInt(String errMsg) throws RuntimeException {
+    //Question 9:
+    //Thay đổi các method ở class ScannerUtils ở Assignment 6 thành static để tiện dùng hơn
+    public static int inputInt(String errMsg) throws RuntimeException {
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Nhập số: ");
@@ -19,7 +20,7 @@ public class ScannerUtils {
         }
     }
 
-    public  float inputFloat(String errMsg) throws RuntimeException {
+    public static float inputFloat(String errMsg) throws RuntimeException {
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Nhập số float: ");
@@ -33,7 +34,7 @@ public class ScannerUtils {
         }
     }
 
-    public  double inputDouble(String errMsg) throws RuntimeException {
+    public static double inputDouble(String errMsg) throws RuntimeException {
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.print("Nhập số double: ");
@@ -47,7 +48,7 @@ public class ScannerUtils {
         }
     }
 
-    public String inputString() {
+    public static String inputString() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập string: ");
         String value = scanner.nextLine();
@@ -56,7 +57,7 @@ public class ScannerUtils {
         return value;
     }
 
-    public int inputAge() throws InvalidAgeInputingException {
+    public static int inputAge() throws InvalidAgeInputingException {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             try {
